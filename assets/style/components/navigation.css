@@ -1,0 +1,100 @@
+header nav.center .nav-container {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  --_gap: 2rem;
+}
+
+.nav-container > .nav-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: var(--header);
+  cursor: pointer;
+  padding-inline: calc(var(--_gap) / 2);
+}
+
+.nav-item > .nav-link {
+  line-height: var(--header);
+  opacity: 0.9;
+  transition: 0.3s opacity, 0.3s color;
+  -webkit-transition: 0.3s opacity, 0.3s color;
+  -moz-transition: 0.3s opacity, 0.3s color;
+  -ms-transition: 0.3s opacity, 0.3s color;
+  -o-transition: 0.3s opacity, 0.3s color;
+}
+
+.nav-item:hover .nav-link {
+  color: #fff;
+  opacity: 1;
+}
+
+.nav-item::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: 0.5rem;
+  background-color: var(--primary);
+  scale: 0 1;
+  transition: 0.3s scale var(--scale-delay, 0ms),
+    0.6s translate var(--translate-delay, 0ms);
+  -webkit-transition: 0.3s scale var(--scale-delay, 0ms),
+    0.6s translate var(--translate-delay, 0ms);
+  -moz-transition: 0.3s scale var(--scale-delay, 0ms),
+    0.6s translate var(--translate-delay, 0ms);
+  -ms-transition: 0.3s scale var(--scale-delay, 0ms),
+    0.6s translate var(--translate-delay, 0ms);
+  -o-transition: 0.3s scale var(--scale-delay, 0ms),
+    0.6s translate var(--translate-delay, 0ms);
+}
+
+.nav-item:hover::after {
+  scale: 1 1;
+}
+
+.nav-item:hover + .nav-item::after {
+  translate: -100%;
+  --scale-delay: 0.3s;
+  --translate-delay: 0.2s;
+}
+
+.nav-item:has(+ :hover)::after {
+  translate: 100%;
+  --scale-delay: 0.3s;
+  --translate-delay: 0.2s;
+}
+
+@media screen and (max-width: 992px) {
+  header nav.center .nav-container {
+    letter-spacing: 0.05rem;
+    font-size: 0.85rem;
+  }
+  .nav-container .nav-item {
+    padding-inline: calc(var(--_gap) / 4);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header nav.center .nav-container {
+    letter-spacing: 0rem;
+    font-size: 0.8rem;
+  }
+  .nav-container .nav-item {
+    padding-inline: calc(var(--_gap) / 5);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  nav.center {
+    display: none;
+  }
+
+  .mobile-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

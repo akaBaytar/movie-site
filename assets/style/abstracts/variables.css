@@ -1,0 +1,55 @@
+:root {
+  --header: 5rem;
+  --height: 0.15rem;
+  --space: calc(var(--height) * 2.5);
+  --singlecard-height: calc(var(--singlecard-width) * 1.2);
+  --singlecard-width: 10rem;
+  --radius: 0.5rem;
+  --card-height: 11rem;
+  --card-width: calc(var(--card-height) * 1.5);
+}
+
+@media screen and (max-width: 1200px) {
+  :root {
+    --singlecard-width: 9rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  :root {
+    --singlecard-width: 10rem;
+    --card-height: 9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --card-height: 11rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  :root {
+    --card-height: 10rem;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  :root {
+    --card-height: 9rem;
+  }
+}
+
+/* small mobile phone */
+@media screen and (max-width: 500px) {
+  :root {
+    --card-height: 12rem;
+  }
+}
+
+/* samsung fold */
+@media screen and (max-width: 285px) {
+  :root {
+    --card-height: 11rem;
+  }
+}

@@ -1,0 +1,88 @@
+header {
+  background-color: var(--background2);
+  position: relative;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header);
+}
+
+/* * logo (left-side) */
+.logo .logo-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: var(--header);
+}
+
+.logo .logo-text {
+  display: flex;
+  font-family: "Teko", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.1rem;
+  color: var(--logo);
+}
+
+/* * user interaction (right-side) */
+.user-interaction .interaction-container {
+  display: flex;
+  align-items: center;
+  height: var(--header);
+  gap: 2rem;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+}
+
+.interaction-container .interaction-item {
+  display: flex;
+  opacity: 0.9;
+  transition: 0.3s opacity, 0.3s color;
+  -webkit-transition: 0.3s opacity, 0.3s color;
+  -moz-transition: 0.3s opacity, 0.3s color;
+  -ms-transition: 0.3s opacity, 0.3s color;
+  -o-transition: 0.3s opacity, 0.3s color;
+}
+
+.interaction-item:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+.interaction-item .nav-link {
+  line-height: var(--header);
+}
+
+@media screen and (max-width: 992px) {
+  .user-interaction .interaction-container {
+    gap: 1rem;
+    letter-spacing: 0.05rem;
+    font-size: 0.85rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo .logo-link {
+    gap: 0.5rem;
+  }
+
+  .logo .logo-icon {
+    height: 50px;
+  }
+
+  .logo .logo-text {
+    font-size: 1.6rem;
+    line-height: 1.2rem;
+  }
+
+  .user-interaction .interaction-container {
+    gap: 0.5rem;
+    font-size: 0.8rem;
+    letter-spacing: 0rem;
+  }
+}
+

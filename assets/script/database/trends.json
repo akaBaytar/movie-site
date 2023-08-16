@@ -1,0 +1,97 @@
+[
+  {
+    "id": 1,
+    "img": "/img/trends/mom.jpeg",
+    "name": {
+      "engName": "ALL ABOUT MY MOTHER",
+      "orgName": "TODO SOBRE MI MADRE"
+    },
+    "director": "Pedro Almodóvar",
+    "country": "Spain, France,",
+    "meta": {
+      "date": "1999",
+      "genre": "Drama, Cult, LGBTQ+",
+      "time": "101"
+    }
+  },
+
+  {
+    "id": 2,
+    "img": "/img/trends/totoro.jpeg",
+    "name": {
+      "engName": "MY NEIGHBOR TOTORO",
+      "orgName": "TONARI NO TOTORO"
+    },
+    "director": "Hayao Miyazaki",
+    "country": "Japan,",
+    "meta": {
+      "date": "1988",
+      "genre": "Animation, Family, Fantasy",
+      "time": "86"
+    }
+  },
+
+  {
+    "id": 3,
+    "img": "/img/trends/red.jpeg",
+    "name": {
+      "engName": "THREE COLORS: RED",
+      "orgName": "TROIS COULEURS: ROUGE"
+    },
+    "director": "Krzysztof Kieślowski",
+    "country": "France, Switzerland,",
+    "meta": {
+      "date": "1994",
+      "genre": "Drama",
+      "time": "99"
+    }
+  },
+
+  {
+    "id": 4,
+    "img": "/img/trends/parasite.jpeg",
+    "name": {
+      "engName": "PARASITE",
+      "orgName": "기생충 GISAENGCHOONG"
+    },
+    "director": "Bong Joon Ho",
+    "country": "S. Korea,",
+    "meta": {
+      "date": "2019",
+      "genre": "Drama, Comedy",
+      "time": "126"
+    }
+  },
+
+  {
+    "id": 5,
+    "img": "/img/trends/kane.jpeg",
+    "name": {
+      "engName": "CITIZEN KANE",
+      "orgName": ""
+    },
+    "director": "Orson Welles",
+    "country": "United States,",
+    "meta": {
+      "date": "1941",
+      "genre": "Drama, Mystery",
+      "time": "119"
+    }
+  },
+
+  {
+    "id": 6,
+    "img": "/img/trends/barbie.jpeg",
+    "name": {
+      "engName": "BARBIE",
+      "orgName": ""
+    },
+    "director": "Greta Gerwig",
+    "country": "United States,",
+    "meta": {
+      "date": "2023",
+      "genre": "Comedy, Romance, Fantasy, Musical",
+      "time": "114"
+    }
+  }
+]

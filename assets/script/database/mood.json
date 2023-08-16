@@ -1,0 +1,61 @@
+[
+  {
+    "id": 1,
+    "img": "/img/in-the-mood-for/chasing-the-truth.jpeg",
+    "desc": "CHASING <br />THE <br />TRUTH"
+  },
+
+  {
+    "id": 2,
+    "img": "/img/in-the-mood-for/debuts.jpeg",
+    "desc": "DEBUTS"
+  },
+
+  {
+    "id": 3,
+    "img": "/img/in-the-mood-for/drawn-to-life.jpeg",
+    "desc": "DRAWN <br />TO <br />LIFE"
+  },
+
+  {
+    "id": 4,
+    "img": "/img/in-the-mood-for/festival-focus.jpeg",
+    "desc": "FESTIVAL <br />FOCUS"
+  },
+
+  {
+    "id": 5,
+    "img": "/img/in-the-mood-for/funny-ha-ha.jpeg",
+    "desc": "FUNNY <br />HA <br />HA"
+  },
+
+  {
+    "id": 6,
+    "img": "/img/in-the-mood-for/long-shorts.jpeg",
+    "desc": "LONG <br />SHORTS"
+  },
+
+  {
+    "id": 7,
+    "img": "/img/in-the-mood-for/luminaries.jpeg",
+    "desc": "LUMINARIES"
+  },
+
+  {
+    "id": 8,
+    "img": "/img/in-the-mood-for/modern-masterpieces.jpeg",
+    "desc": "MODERN <br />MASTER <br />PIECES"
+  },
+
+  {
+    "id": 9,
+    "img": "/img/in-the-mood-for/new-horizon.jpeg",
+    "desc": "NEW <br />HORIZONS"
+  },
+
+  {
+    "id": 10,
+    "img": "/img/in-the-mood-for/pride-unprejudiced.jpeg",
+    "desc": "PRIDE <br />UNPREJUDICED"
+  }
+]

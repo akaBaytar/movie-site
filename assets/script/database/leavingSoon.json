@@ -1,0 +1,151 @@
+[
+  {
+    "id": 1,
+    "name": {
+      "engName": "8½",
+      "orgName": ""
+    },
+    "img": "/img/leaving-soon/8half.jpeg",
+    "director": "Federico Fellini",
+    "meta": {
+      "countries": "Italy, France,",
+      "date": "1963",
+      "leavingDate": 3
+    }
+  },
+
+  {
+    "id": 2,
+    "name": {
+      "engName": "THE 400 BLOWS",
+      "orgName": "LES QUATRE CENTS COUPS"
+    },
+    "img": "/img/leaving-soon/400blows.jpeg",
+    "director": "François Truffaut",
+    "meta": {
+      "countries": "France,",
+      "date": "1959",
+      "leavingDate": 8
+    }
+  },
+
+  {
+    "id": 3,
+    "name": {
+      "engName": "AFTERSUN",
+      "orgName": ""
+    },
+    "img": "/img/leaving-soon/aftersun.jpeg",
+    "director": "Charlotte Wells",
+    "meta": {
+      "countries": "UK, USA,",
+      "date": "2022",
+      "leavingDate": 6
+    }
+  },
+
+  {
+    "id": 4,
+    "name": {
+      "engName": "APOCALYPSE NOW",
+      "orgName": ""
+    },
+    "img": "/img/leaving-soon/apocalypse.jpeg",
+    "director": "Francis Ford Coppola",
+    "meta": {
+      "countries": "USA,",
+      "date": "1979",
+      "leavingDate": 2
+    }
+  },
+
+  {
+    "id": 5,
+    "name": {
+      "engName": "TRIPPING WITH NILS FRAHM",
+      "orgName": ""
+    },
+    "img": "/img/leaving-soon/tripping.jpeg",
+    "director": "Benoit Toulemonde",
+    "meta": {
+      "countries": "Germary, USA,",
+      "date": "2020",
+      "leavingDate": 7
+    }
+  },
+
+  {
+    "id": 6,
+    "name": {
+      "engName": "JOSEP",
+      "orgName": ""
+    },
+    "img": "/img/leaving-soon/josep.jpeg",
+    "director": "Aurel",
+    "meta": {
+      "countries": "France, Spain,",
+      "date": "2020",
+      "leavingDate": 2
+    }
+  },
+
+  {
+    "id": 7,
+    "name": {
+      "engName": "SOMETHING USEFUL",
+      "orgName": "İŞE YARAR BIR ŞEY"
+    },
+    "img": "/img/leaving-soon/something-useful.jpeg",
+    "director": "Pelin Esmer",
+    "meta": {
+      "countries": "Turkey, France,",
+      "date": "2017",
+      "leavingDate": 6
+    }
+  },
+
+  {
+    "id": 8,
+    "name": {
+      "engName": "THREE COLORS: BLUE",
+      "orgName": "TROIS COULEURS : BLEU"
+    },
+    "img": "/img/leaving-soon/blue.jpeg",
+    "director": "Krzysztof Kieślowski",
+    "meta": {
+      "countries": "France, Poland,",
+      "date": "1993",
+      "leavingDate": 4
+    }
+  },
+
+  {
+    "id": 9,
+    "name": {
+      "engName": "WINGS OF DESIRE",
+      "orgName": "DER HIMMEL ÜBER BERLIN"
+    },
+    "img": "/img/leaving-soon/wings-of-desire.jpeg",
+    "director": "Wim Wenders",
+    "meta": {
+      "countries": "West Germany, France,",
+      "date": "1987",
+      "leavingDate": 7
+    }
+  },
+
+  {
+    "id": 10,
+    "name": {
+      "engName": "THE HUNT",
+      "orgName": "JAGTEN"
+    },
+    "img": "/img/leaving-soon/hunt.jpeg",
+    "director": "Thomas Vinterberg",
+    "meta": {
+      "countries": "Denmark,",
+      "date": "2012",
+      "leavingDate": 1
+    }
+  }
+]

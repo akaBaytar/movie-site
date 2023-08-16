@@ -1,0 +1,443 @@
+/* * trend cards */
+.single-card-container,
+.single-card {
+  height: var(--singlecard-height);
+  max-width: var(--singlecard-width);
+  position: relative;
+}
+
+.single-card-container {
+  perspective: 50rem;
+}
+
+.single-card {
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: all 1.5s cubic-bezier(0.7, -0.5, 0.3, 1.8);
+  -webkit-transition: all 1.5s cubic-bezier(0.7, -0.5, 0.3, 1.8);
+  -moz-transition: all 1.5s cubic-bezier(0.7, -0.5, 0.3, 1.8);
+  -ms-transition: all 1.5s cubic-bezier(0.7, -0.5, 0.3, 1.8);
+  -o-transition: all 1.5s cubic-bezier(0.7, -0.5, 0.3, 1.8);
+}
+
+.single-card-container:hover .single-card {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+}
+
+.single-card .front,
+.single-card .back {
+  position: relative;
+  width: var(--singlecard-width);
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: var(--radius);
+  -webkit-border-radius: var(--radius);
+  -moz-border-radius: var(--radius);
+  -ms-border-radius: var(--radius);
+  -o-border-radius: var(--radius);
+}
+
+.single-card .front {
+  cursor: pointer;
+  height: 100%;
+}
+
+.front img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: var(--radius);
+  -webkit-border-radius: var(--radius);
+  -moz-border-radius: var(--radius);
+  -ms-border-radius: var(--radius);
+  -o-border-radius: var(--radius);
+}
+
+.single-card .back {
+  position: absolute;
+  height: 100%;
+  background-color: var(--background2);
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg "angle");
+  -moz-transform: rotateY(180deg "angle");
+  -ms-transform: rotateY(180deg "angle");
+  -o-transform: rotateY(180deg "angle");
+}
+
+.back .content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.content .eng-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.content .title {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.content .director,
+.content .country,
+.content .date {
+  font-size: 0.7rem;
+  font-style: italic;
+}
+
+.content .genre,
+.content .time {
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+.content .time {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .back .content {
+    gap: 0.2rem;
+  }
+
+  .content .eng-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .content .title {
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+
+  .content .director,
+  .content .country,
+  .content .date {
+    font-size: 0.6rem;
+  }
+
+  .content .genre,
+  .content .time {
+    font-size: 0.6rem;
+  }
+
+  .content .time {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
+  }
+}
+
+/* * in the mood cards */
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 2rem;
+  column-gap: 2rem;
+}
+
+@media screen and (max-width: 540px) {
+  .card-container {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 488px) {
+  .card-container {
+    column-gap: 1rem;
+  }
+}
+
+.card {
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--card-width);
+  height: var(--card-height);
+  border-radius: var(--radius);
+  -webkit-border-radius: var(--radius);
+  -moz-border-radius: var(--radius);
+  -ms-border-radius: var(--radius);
+  -o-border-radius: var(--radius);
+}
+
+.card#card9,
+.card#card10 {
+  display: none;
+}
+
+.card img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  object-position: center center;
+  opacity: 0.5;
+  border-radius: var(--radius);
+  -webkit-border-radius: var(--radius);
+  -moz-border-radius: var(--radius);
+  -ms-border-radius: var(--radius);
+  -o-border-radius: var(--radius);
+  transition: 0.3s opacity;
+  -webkit-transition: 0.3s opacity;
+  -moz-transition: 0.3s opacity;
+  -ms-transition: 0.3s opacity;
+  -o-transition: 0.3s opacity;
+}
+
+.card .card-title {
+  z-index: 1;
+  font-size: 1.5rem;
+  text-align: center;
+  transition: 0.3s font-size;
+  -webkit-transition: 0.3s font-size;
+  -moz-transition: 0.3s font-size;
+  -ms-transition: 0.3s font-size;
+  -o-transition: 0.3s font-size;
+}
+
+.card:hover img {
+  opacity: 1;
+}
+
+.card:hover .card-title {
+  font-size: 1.8rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .card#card9 {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card#card7,
+  .card#card8,
+  .card#card9 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .card#card5,
+  .card#card6 {
+    display: none;
+  }
+}
+
+/* * now showing cards */
+.card .card-meta {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  opacity: 1;
+  transition: 0.3s opacity;
+  -webkit-transition: 0.3s opacity;
+  -moz-transition: 0.3s opacity;
+  -ms-transition: 0.3s opacity;
+  -o-transition: 0.3s opacity;
+}
+
+.card:hover .card-meta {
+  opacity: 0;
+}
+
+.card-meta .movie-id {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+
+.movie-id .card-id {
+  font-size: 1.6rem;
+}
+
+.card-meta .movie-title {
+  font-size: 1rem;
+}
+
+.card-meta .movie-subtitle {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.card-meta .movie-director {
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.card-meta .movie-countries {
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.card .bi-play-circle {
+  opacity: 0;
+  font-size: 1rem;
+  z-index: 1;
+  color: var(--text);
+  transition: 0.3s opacity, 0.3s font-size;
+  -webkit-transition: 0.3s opacity, 0.3s font-size;
+  -moz-transition: 0.3s opacity, 0.3s font-size;
+  -ms-transition: 0.3s opacity, 0.3s font-size;
+  -o-transition: 0.3s opacity, 0.3s font-size;
+}
+
+.card:hover .bi-play-circle {
+  opacity: 1;
+  font-size: 4rem;
+}
+
+@media screen and (max-width: 992px) {
+  .movie-id .card-id {
+    font-size: 1rem;
+  }
+
+  .card-meta .movie-title {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .card-meta .movie-subtitle {
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+
+  .card-meta .movie-director {
+    font-size: 0.7rem;
+  }
+
+  .card-meta .movie-countries {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .movie-id .card-id {
+    font-size: 1.6rem;
+  }
+
+  .card-meta .movie-title {
+    font-size: 1rem;
+  }
+
+  .card-meta .movie-subtitle {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .movie-id .card-id {
+    font-size: 1.2rem;
+  }
+
+  .card-meta .movie-title {
+    font-size: 0.9rem;
+  }
+
+  .card-meta .movie-subtitle {
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .movie-id .card-id {
+    font-size: 1rem;
+  }
+
+  .card-meta .movie-title {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .card-meta .movie-subtitle {
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+
+  .card-meta .movie-director {
+    font-size: 0.7rem;
+  }
+
+  .card-meta .movie-countries {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .movie-id .card-id {
+    font-size: 1.6rem;
+  }
+
+  .card-meta .movie-title {
+    font-size: 1rem;
+  }
+
+  .card-meta .movie-subtitle {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .card-meta .movie-director {
+    font-size: 0.9rem;
+  }
+
+  .card-meta .movie-countries {
+    font-size: 0.8rem;
+  }
+}
+
+/* * leaving soon cards */
+.card .leaving-date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text);
+  background-color: var(--background2);
+  z-index: 1;
+  opacity: 1;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+  transition: 0.3s opacity, 0.3s top;
+  -webkit-transition: 0.3s opacity, 0.3s top;
+  -moz-transition: 0.3s opacity, 0.3s top;
+  -ms-transition: 0.3s opacity, 0.3s top;
+  -o-transition: 0.3s opacity, 0.3s top;
+}
+
+.card:hover .leaving-date {
+  top: -1rem;
+  opacity: 0;
+}
+

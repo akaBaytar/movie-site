@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "name": "America",
+    "img": "/img/countries/america.jpeg"
+  },
+
+  {
+    "id": 2,
+    "name": "Asia",
+    "img": "/img/countries/asia.jpeg"
+  },
+
+  {
+    "id": 3,
+    "name": "Europe",
+    "img": "/img/countries/europe.jpeg"
+  },
+
+  {
+    "id": 4,
+    "name": "Africa",
+    "img": "/img/countries/africa.jpeg"
+  },
+
+  {
+    "id": 5,
+    "name": "Scandinavia",
+    "img": "/img/countries/scandinavia.jpeg"
+  },
+
+  {
+    "id": 6,
+    "name": "Korea",
+    "img": "/img/countries/korea.jpeg"
+  },
+
+  {
+    "id": 7,
+    "name": "Soviets",
+    "img": "/img/countries/soviet.jpeg"
+  },
+
+  {
+    "id": 8,
+    "name": "Turkey",
+    "img": "/img/countries/turkey.jpeg"
+  },
+
+  {
+    "id": 9,
+    "name": "Other Cultures",
+    "img": "/img/countries/other.jpeg"
+  }
+]
+

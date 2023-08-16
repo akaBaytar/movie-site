@@ -1,0 +1,141 @@
+[
+  {
+    "id": 1,
+    "name": {
+      "engName": "PORTRAIT OF A LADY ON FIRE",
+      "orgName": "PORTRAIT DE LA JEUNE FILLE EN FEU"
+    },
+    "img": "/img/now-showing/lady-fire.jpeg",
+    "director": "Céline Sciamma",
+    "meta": {
+      "countries": "France,",
+      "date": "2019"
+    }
+  },
+
+  {
+    "id": 2,
+    "name": {
+      "engName": "HEAD-ON",
+      "orgName": ""
+    },
+    "img": "/img/now-showing/head-on.jpeg",
+    "director": "Fatih Akın",
+    "meta": {
+      "countries": "Germany, Turkey,",
+      "date": "2004"
+    }
+  },
+
+  {
+    "id": 3,
+    "name": {
+      "engName": "WHERE IS THE FRIEND'S HOUSE?",
+      "orgName": "KHANE-YE DOUST KODJAST?"
+    },
+    "img": "/img/now-showing/friends-house.jpeg",
+    "director": "Abbas Kiarostami",
+    "meta": {
+      "countries": "Iran,",
+      "date": "1987"
+    }
+  },
+
+  {
+    "id": 4,
+    "name": {
+      "engName": "MY LIFE AS A COURGETTE",
+      "orgName": "MA VIE DE COURGETTE"
+    },
+    "img": "/img/now-showing/courgette.jpeg",
+    "director": "Claude Barras",
+    "meta": {
+      "countries": "Switzerland, France",
+      "date": "2016"
+    }
+  },
+
+  {
+    "id": 5,
+    "name": {
+      "engName": "BARBIE",
+      "orgName": ""
+    },
+    "img": "/img/now-showing/barbie.jpeg",
+    "director": "Greta Gerwig",
+    "meta": {
+      "countries": "United States,",
+      "date": "2023"
+    }
+  },
+
+  {
+    "id": 6,
+    "name": {
+      "engName": "PARIS, TEXAS",
+      "orgName": ""
+    },
+    "img": "/img/now-showing/paris.jpeg",
+    "director": "Wim Wenders",
+    "meta": {
+      "countries": "West Germary, France,",
+      "date": "1984"
+    }
+  },
+
+  {
+    "id": 7,
+    "name": {
+      "engName": "2001:A SPACE ODYSSEY",
+      "orgName": ""
+    },
+    "img": "/img/now-showing/space.jpeg",
+    "director": "Stanley Kubrick",
+    "meta": {
+      "countries": "UK, USA,",
+      "date": "1968"
+    }
+  },
+
+  {
+    "id": 8,
+    "name": {
+      "engName": "IN THE MOOD FOR LOVE",
+      "orgName": "花樣年華"
+    },
+    "img": "/img/now-showing/mood-love.jpeg",
+    "director": "Wong Kar Wai",
+    "meta": {
+      "countries": "Hong Kong",
+      "date": "2000"
+    }
+  },
+
+  {
+    "id": 9,
+    "name": {
+      "engName": "STALKER",
+      "orgName": "СТАЛКЕР"
+    },
+    "img": "/img/now-showing/stalker.jpeg",
+    "director": "Andrei Tarkovsky",
+    "meta": {
+      "countries": "Soviet Union, West Germany,",
+      "date": "1979"
+    }
+  },
+
+  {
+    "id": 10,
+    "name": {
+      "engName": "Close",
+      "orgName": ""
+    },
+    "img": "/img/now-showing/close.jpeg",
+    "director": "Lukas Dhont",
+    "meta": {
+      "countries": "Belgium, Netherlands,",
+      "date": "2022"
+    }
+  }
+]

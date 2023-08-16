@@ -1,0 +1,151 @@
+/* * MOBIL MENU CHECKBOX */
+.mobile-menu-container {
+  display: none;
+}
+
+@media screen and (max-width:540px) {
+  .mobile-menu-container {
+    display: flex;
+  }
+}
+
+#mobile-menu-toggle {
+  display: none;
+}
+
+#mobile-menu-toggle:checked + .mobile-menu span {
+  background: transparent;
+  transition: 0.3s background-color;
+  -webkit-transition: 0.3s background-color;
+  -moz-transition: 0.3s background-color;
+  -ms-transition: 0.3s background-color;
+  -o-transition: 0.3s background-color;
+}
+
+#mobile-menu-toggle:checked + .mobile-menu span::before {
+  bottom: 0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transition: 0.3s 0.3s transform, 0.3s bottom;
+  -webkit-transition: 0.3s 0.3s transform, 0.3s bottom;
+  -moz-transition: 0.3s 0.3s transform, 0.3s bottom;
+  -ms-transition: 0.3s 0.3s transform, 0.3s bottom;
+  -o-transition: 0.3s 0.3s transform, 0.3s bottom;
+}
+
+#mobile-menu-toggle:checked + .mobile-menu span::after {
+  top: 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transition: 0.3s 0.3s transform, 0.3s top;
+  -webkit-transition: 0.3s 0.3s transform, 0.3s top;
+  -moz-transition: 0.3s 0.3s transform, 0.3s top;
+  -ms-transition: 0.3s 0.3s transform, 0.3s top;
+  -o-transition: 0.3s 0.3s transform, 0.3s top;
+}
+
+/* * MOBIL MENU TOGGLE ICON */
+.mobile-menu {
+  cursor: pointer;
+  display: flex;
+  width: calc(10 * var(--height));
+  height: calc(6 * var(--height));
+}
+
+.mobile-menu span,
+.mobile-menu span::before,
+.mobile-menu span::after {
+  content: "";
+  display: block;
+  height: var(--height);
+  width: 100%;
+  background-color: var(--text);
+}
+
+.mobile-menu span {
+  transform: translateY(var(--space));
+  -webkit-transform: translateY(var(--space));
+  -moz-transform: translateY(var(--space));
+  -ms-transform: translateY(var(--space));
+  -o-transform: translateY(var(--space));
+  transition: 0.3s background-color;
+  -webkit-transition: 0.3s background-color;
+  -moz-transition: 0.3s background-color;
+  -ms-transition: 0.3s background-color;
+  -o-transition: 0.3s background-color;
+}
+
+.mobile-menu span::before {
+  position: absolute;
+  bottom: var(--space);
+  transition: 0.3s transform, 0.3s 0.3s bottom;
+  -webkit-transition: 0.3s transform, 0.3s 0.3s bottom;
+  -moz-transition: 0.3s transform, 0.3s 0.3s bottom;
+  -ms-transition: 0.3s transform, 0.3s 0.3s bottom;
+  -o-transition: 0.3s transform, 0.3s 0.3s bottom;
+}
+
+.mobile-menu span::after {
+  position: absolute;
+  top: var(--space);
+  transition: 0.3s transform, 0.3s 0.3s top;
+  -webkit-transition: 0.3s transform, 0.3s 0.3s top;
+  -moz-transition: 0.3s transform, 0.3s 0.3s top;
+  -ms-transition: 0.3s transform, 0.3s 0.3s top;
+  -o-transition: 0.3s transform, 0.3s 0.3s top;
+}
+
+/* * MOBILE NAVIGATION */
+.mobile-navigation{
+  display: none;
+  position: absolute;
+  top: var(--header);
+  left: -100%;
+  width: 66vw;
+  height: 66vh;
+  background-color: var(--background2);
+  z-index: 2;
+  border-right: 1px solid var(--background1);
+  border-bottom: 1px solid var(--background1);
+  border-bottom-right-radius: var(--radius);
+  transition: 0.3s 0.3s left;
+  -webkit-transition: 0.3s 0.3s left;
+  -moz-transition: 0.3s 0.3s left;
+  -ms-transition: 0.3s 0.3s left;
+  -o-transition: 0.3s 0.3s left;
+}
+
+.mobile-navigation .mobile-nav-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.mobile-nav-item .mobile-nav-link{
+  padding: 1rem 2rem;
+  min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.1rem;
+  font-size: 1.2rem;
+  opacity: 0.9;
+  color: var(--text);
+}
+
+.mobile-nav-item:hover .mobile-nav-link{
+  opacity: 1;
+  color: #fff;
+}
+
+@media screen and (max-width:320px) {
+  .mobile-nav-item .mobile-nav-link{
+    padding: 1rem;
+  }
+}
