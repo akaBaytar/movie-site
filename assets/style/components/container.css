@@ -8,6 +8,13 @@
   padding-bottom: 3rem;
 }
 
+.spinner-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 45vh;
+}
+
 .container {
   position: relative;
   width: 1200px;
